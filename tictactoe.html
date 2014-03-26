@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css3.css"/>
+	  <script type="text/javascript" src="tic.js">	
+    </script>
+	</head>
+	<body>
+  <center>
+		<div id ="box">
+			<h1> TIC - TAC - TOE</h1>
+      <div id="names">
+     </div>
+  <p class="nametext"> Player 1: &nbsp </p>
+  <input type="text" class="nameinput" id="name1"/>
+  
+  <p class="nametext"> Player 2: &nbsp </p>
+  <input type="text" class="nameinput" id="name2"/>
+</div>
+
+<br/>
+<br/>
+
+<p id="caption">
+Press START GAME to play
+</p>
+
+<table>
+  <td>
+  <table>
+    <tr>
+			<canvas id = "canvas1"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(1)"></canvas>
+			<canvas id = "canvas2"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(2)"></canvas>
+			<canvas id = "canvas3"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(3)"></canvas><br/>
+			<canvas id = "canvas4"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(4)"></canvas>
+			<canvas id = "canvas5"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(5)"></canvas>
+			<canvas id = "canvas6"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(6)"></canvas><br/>
+			<canvas id = "canvas7"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(7)"></canvas>
+			<canvas id = "canvas8"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(8)"></canvas>
+			<canvas id = "canvas9"  width="100" height="100" style="border:1px solid black" onclick="canvasClicked(9)"></canvas>
+		</tr>
+   </table>
+    </td>
+<td>
+<table>
+<tr><td><input type=text size=5 name=you></td><td>Du</td></tr>
+<tr><td><input type=text size=5 name=computer></td><td>Er</td></tr>
+<tr><td><input type=text size=5 name=ties></td><td>Unentschieden</td></tr>
+</table>
+</td>
+</table>
+
+    
+    <div id="starttab" onclick="Start()">
+      <p id="starttext">
+      START GAME
+      </p>
+ </div>
+ </center>
+	</body>
+</html>
+
