@@ -38,12 +38,16 @@ function loadCanvas() {
         content[l] = '';
     }
     squaresFilled = 0;
-    ClearField();
+	for(var i=1;i<10;i++){
+		theCanvas="canvas" + i;
+		c = document.getElementById(theCanvas);
+		cxt=c.getContext("2d");
+		cxt.fillStyle="#FFFFFF";
+		cxt.fillRect(0,0,100,100);
+    }
 }
 
-function clearField() {
-    //todo
-}
+
 
 //Game methods
 function canvasClicked(canvasNumber) {
